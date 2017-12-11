@@ -95,16 +95,10 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 #Mysql数据库的配置信息(debug環境)
-MYSQL_HOST = '192.168.8.117'   #主機地址
-MYSQL_DBNAME = 'hk591'          #数据库名字
-MYSQL_USER = 't591'             #数据库账号
-MYSQL_PASSWD = 'sogamysql'     #数据库密码
+MYSQL_HOST = '127.0.0.1'   #主機地址
+MYSQL_DBNAME = 'test'          #数据库名字
+MYSQL_USER = 'root'             #数据库账号
+MYSQL_PASSWD = ''     #数据库密码
 MYSQL_PORT = 3306               #数据库端口
 
-#Mysql線上環境
-# MYSQL_HOST = '192.168.1.193'   #主機地址
-# MYSQL_DBNAME = 'hk591'          #数据库名字
-# MYSQL_USER = 'hk591'             #数据库账号
-# MYSQL_PASSWD = 'sogahk%(!'     #数据库密码
-# MYSQL_PORT = 3306               #数据库端口
 
