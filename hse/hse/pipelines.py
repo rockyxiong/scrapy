@@ -43,6 +43,10 @@ class HsePipeline(object):
                      item['area'],
                      item['company_address'], item['effective_date'],
                      item['expiry_date'], item['posttime']))
+			elif spider.name == 'news':
+                 sql = "INSERT INTO news(title,content,link,cover,source,author,posttime) VALUES(%s,%s,%s,%s,%s,%s,%s)"
+                 self.cursor.execute(sql,(item['title'],item['content'],item['link'],item['cover'],item['source'],item['author'],item['posttime']))
+            self.conn.commit()
             self.conn.commit()
 
         except MySQLdb.Error, e:
